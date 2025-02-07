@@ -15,7 +15,7 @@ Make sure you have the following installed:
 
 - Python 3.12.4
 - MongoDB Atlas account (or a local MongoDB installation)
-- Node.js (for frontend development, optional)
+- Frontend: yet to decide!
 
 ## Installation
 
