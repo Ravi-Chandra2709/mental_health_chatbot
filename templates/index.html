@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Trends</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chart-container { width: 80%; margin: auto; }
+    </style>
+</head>
+<body>
+    <h1>Mood Trends</h1>
+    <div id="chart-container">
+        <canvas id="moodChart"></canvas>
+    </div>
+    <script>
+        async function fetchMoodTrends() {
+            const response = await fetch("http://127.0.0.1:5000/mood_trends?user_id=user123");
+            const data = await response.json();
+            const ctx = document.getElementById('moodChart').getContext('2d');
+
+            // Create the chart
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: data.datasets
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Mood Trends Over the Last 14 Days'
+                        },
+                        tooltip: {
+                            enabled: true
+                        },
+                        legend: {
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Mood Count'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            }
+                        }
+                    }
+                }
+            });
+
+        }
+
+        // Fetch and display the mood trends
+        fetchMoodTrends();
+    </script>
+</body>
+</html>
