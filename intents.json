@@ -1,0 +1,382 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hey", "Is anyone there?", "Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Good Evening", "Good afternoon"
+      ],
+      "responses": [
+        "Hello there! How are you feeling today?",
+        "Hi, I'm here to support you. How are you doing?"
+      ]
+    },
+    {
+      "tag": "morning",
+      "patterns": ["Good morning"],
+      "responses": [
+        "Good morning! I hope you had a restful night. How are you feeling today?"
+      ]
+    },
+    {
+      "tag": "afternoon",
+      "patterns": ["Good afternoon"],
+      "responses": [
+        "Good afternoon. How is your day going so far?"
+      ]
+    },
+    {
+      "tag": "evening",
+      "patterns": ["Good evening"],
+      "responses": [
+        "Good evening. How has your day been? I'm here if you want to talk."
+      ]
+    },
+    {
+      "tag": "night",
+      "patterns": ["Good night"],
+      "responses": [
+        "Good night. Remember to get some rest and take care of yourself.",
+        "Sweet dreams! Take a moment to relax before you sleep."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "I'm leaving"],
+      "responses": [
+        "Take care. Remember, I'm always here if you need to talk.",
+        "Goodbye! Stay safe and take care of yourself."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Thank you very much"],
+      "responses": [
+        "You're welcome! I'm glad I could help.",
+        "Anytime! I'm here for you."
+      ]
+    },
+    {
+      "tag": "no-response",
+      "patterns": [""],
+      "responses": [
+        "Sorry, I didn't understand you.",
+        "Please go on. I'm here to listen."
+      ]
+    },
+    {
+      "tag": "neutral-response",
+      "patterns": ["nothing much", "nothing really", "nothing"],
+      "responses": [
+        "I see. Would you like to talk about something specific?"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": ["Who are you?", "What are you?", "Tell me more about yourself", "What's your name?"],
+      "responses": [
+        "I'm a bot, your personal therapeutic AI assistant here to support you. How are you feeling today?",
+        "I'm a bot. I'm designed to have compassionate conversations and provide resources, but I'm not a substitute for professional help."
+      ]
+    },
+    {
+      "tag": "what is depression?",
+      "patterns": ["what is depression?"],
+      "responses": [
+        "Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. It affects how you feel, think, and act. If you're experiencing these symptoms, it's important to consider professional support alongside self-care strategies. You can read more at the National Institute of Mental Health: https://www.nimh.nih.gov."
+      ]
+    },
+    {
+      "tag": "skill",
+      "patterns": ["What can you do?"],
+      "responses": [
+        "I can offer support, suggest self-care strategies, provide information about mental health, and help track your mood. Remember, I'm here to assist but I'm not a substitute for professional help."
+      ]
+    },
+    {
+      "tag": "creation",
+      "patterns": ["Who created you?", "How were you made?"],
+      "responses": [
+        "I was developed using advanced deep learning techniques and trained on a variety of text data related to mental health and supportive conversations."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Could you help me?", "Can you help?", "I need support", "I need help"],
+      "responses": [
+        "Of course, I'm here for you. Tell me what you're experiencing, and I'll do my best to help.",
+        "I'm here to listen. Please share what's on your mind."
+      ]
+    },
+    {
+      "tag": "sad",
+      "patterns": ["I feel sad", "I'm feeling lonely", "I feel down", "I am sad"],
+      "responses": [
+        "I'm sorry you're feeling this way. Sometimes sharing what's bothering you can help. Would you like to talk about it?",
+        "It sounds like you're going through a tough time. I'm here to listen if you want to share more about your feelings."
+      ]
+    },
+    {
+      "tag": "stressed",
+      "patterns": ["I am so stressed", "I'm stressed out", "I feel burned out"],
+      "responses": [
+        "I'm sorry you're feeling overwhelmed. Sometimes taking a short break or practicing deep breathing can help. Would you like some quick stress-relief tips?",
+        "Stress can be very challenging. Have you tried any relaxation techniques like mindfulness or a short walk?"
+      ]
+    },
+    {
+      "tag": "worthless",
+      "patterns": ["I feel so worthless", "I'm useless", "I can't do anything"],
+      "responses": [
+        "I'm really sorry that you feel that way. It's important to remember that your value isn't determined by a single moment or mistake. Would you like to talk about what’s making you feel this way?",
+        "It sounds like you're in a really tough spot. Sometimes sharing your thoughts can help lighten the burden. I'm here to listen."
+      ]
+    },
+    {
+      "tag": "depressed",
+      "patterns": ["I can't take it anymore", "I'm so depressed", "I have depression"],
+      "responses": [
+        "I'm sorry you're feeling so low. It might help to speak with someone who can provide professional support. Would you like information on finding a therapist or hotline?",
+        "Depression can be very heavy. I'm here to support you, but please consider seeking professional help if these feelings persist."
+      ]
+    },
+    {
+      "tag": "happy",
+      "patterns": ["I feel great today", "I am happy", "I'm good", "I'm fine"],
+      "responses": [
+        "That's wonderful to hear! It's important to celebrate the good moments.",
+        "I'm glad you're feeling happy today. What do you think contributed to your good mood?"
+      ]
+    },
+    {
+      "tag": "casual",
+      "patterns": ["Oh I see", "ok", "okay", "nice", "Whatever", "K", "Fine"],
+      "responses": [
+        "I understand. Could you tell me a bit more about how you're feeling?",
+        "Let's talk more about that. What else is on your mind?"
+      ]
+    },
+    {
+      "tag": "anxious",
+      "patterns": ["I feel so anxious", "I'm really anxious", "I am anxious"],
+      "responses": [
+        "I'm sorry you're feeling anxious. Sometimes grounding exercises or the 3-3-3 technique can help. Would you like to try one?",
+        "Anxiety can be overwhelming. Would you like some tips on how to manage those feelings?"
+      ]
+    },
+    {
+      "tag": "not-talking",
+      "patterns": ["I don't want to talk about it", "I can't bring myself to open up"],
+      "responses": [
+        "That's completely okay. I'm here whenever you're ready to talk.",
+        "I understand. Sometimes silence is also a way to process your feelings."
+      ]
+    },
+    {
+      "tag": "sleep",
+      "patterns": ["I can't sleep", "I have insomnia", "I'm not sleeping well"],
+      "responses": [
+        "Sleep is important for our well-being. Have you tried establishing a bedtime routine or reducing screen time before bed?",
+        "Sometimes a warm beverage or a relaxation technique can help you fall asleep. Would you like some tips?"
+      ]
+    },
+    {
+      "tag": "scared",
+      "patterns": ["I'm scared", "I feel scared", "I'm afraid"],
+      "responses": [
+        "It's natural to feel scared sometimes. Would talking about it help you feel a bit safer?",
+        "I'm here for you. Can you share what's making you feel this way?"
+      ]
+    },
+    {
+      "tag": "death",
+      "patterns": ["My mom died", "My brother died", "Someone close to me passed away"],
+      "responses": [
+        "I'm very sorry for your loss. Grief can be incredibly hard. If you’d like, we can talk about how you’re feeling.",
+        "Losing someone is never easy. Please know I'm here to support you, and it might help to talk with someone you trust."
+      ]
+    },
+    {
+      "tag": "understand",
+      "patterns": ["You don't understand me", "You're just a robot", "You can't know what I'm going through"],
+      "responses": [
+        "I understand it might be hard to believe, but I'm here to listen and offer support. Can you tell me more?",
+        "I'm sorry if I seem distant. I truly want to help you. Please share what you're comfortable with."
+      ]
+    },
+    {
+      "tag": "done",
+      "patterns": ["That's all", "I don't have anything more to say", "Nothing else"],
+      "responses": [
+        "I heard you. If you ever want to talk again, I'll be here.",
+        "Okay, take care and remember you can always come back to chat."
+      ]
+    },
+    {
+      "tag": "suicide",
+      "patterns": ["I want to kill myself", "I've thought about killing myself", "I want to die", "I'm going to kill myself"],
+      "responses": [
+        "I'm really sorry you're feeling this way. If you're in immediate danger, please call 911 or your local emergency services right away. It might also help to speak with someone immediately—a trusted friend or a mental health professional. If you're in the U.S., you can call the National Suicide Prevention Lifeline at 988.",
+        "Your life is important, and help is available. Please consider reaching out immediately to someone you trust or a crisis support service."
+      ]
+    },
+    {
+      "tag": "hate-you",
+      "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+      "responses": [
+        "I'm sorry if I've disappointed you. My only aim is to support you. Please let me know how I can improve.",
+        "I understand your frustration. I'm here to help, so please tell me how I can better support you."
+      ]
+    },
+    {
+      "tag": "hate-me",
+      "patterns": ["You hate me", "I know you hate me"],
+      "responses": [
+        "It sounds like you're hurting. I care about you and I'm here to listen if you want to share your feelings.",
+        "I'm sorry you feel that way. Remember, sometimes our emotions can distort our view of ourselves."
+      ]
+    },
+    {
+      "tag": "default",
+      "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+      "responses": [
+        "That sounds challenging. Can you tell me more about what's going on?",
+        "I understand this might be a complex issue. Would you like to talk more about it?"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": ["Tell me a joke", "Make me laugh"],
+      "responses": [
+        "I'm here to support you, not to joke about mental health. But if a smile helps, remember that sometimes laughter is the best medicine."
+      ]
+    },
+    {
+      "tag": "repeat",
+      "patterns": ["You already told me that", "You mentioned that already"],
+      "responses": [
+        "I'm sorry for repeating myself. Let's try to explore something new.",
+        "My apologies. Could you tell me more so we can discuss further?"
+      ]
+    },
+    {
+      "tag": "wrong",
+      "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response"],
+      "responses": [
+        "I'm sorry for the confusion. Could you rephrase that or tell me more about what you're feeling?",
+        "I apologize if that wasn't clear. Let's try to talk it through."
+      ]
+    },
+    {
+      "tag": "self_care_tips",
+      "patterns": ["What can I do for myself?", "Any self-care suggestions?", "How can I take better care of myself?"],
+      "responses": [
+        "Self-care can be simple: consider taking a warm bath, reading a book, or listening to calming music. Sometimes even a short walk can help clear your mind.",
+        "Taking time for yourself is important. Maybe try some light exercise or mindfulness meditation. Would you like more ideas?"
+      ]
+    },
+    {
+      "tag": "mindfulness_exercise",
+      "patterns": ["I want to try mindfulness", "Guide me through a meditation", "Help me relax"],
+      "responses": [
+        "Let's try a simple breathing exercise: Inhale slowly through your nose for a count of four, hold for four, then exhale through your mouth for four. Repeat a few times.",
+        "Focus on your breath—inhale deeply, hold, and exhale slowly. Let your thoughts pass without judgment. How does that feel?"
+      ]
+    },
+    {
+      "tag": "cognitive_restructuring",
+      "patterns": ["How can I challenge negative thoughts?", "Help me reframe my thoughts", "I need to think more positively"],
+      "responses": [
+        "A useful technique is to ask yourself if there's another way to view the situation. Sometimes writing down your thoughts and then countering them with evidence can help.",
+        "Try to challenge your negative thoughts by asking: What evidence do I have for this thought? Is there another perspective?"
+      ]
+    },
+    {
+      "tag": "social_support",
+      "patterns": ["I feel lonely", "I need someone to talk to", "I'm feeling isolated"],
+      "responses": [
+        "Social connections can be really helpful. It might help to reach out to a friend, or even consider joining a support group. Would you like some suggestions?",
+        "Loneliness is tough. Sometimes talking to someone you trust or connecting with a community can make a difference."
+      ]
+    },
+    {
+      "tag": "professional_help",
+      "patterns": ["Should I see a therapist?", "I need professional help", "Can you help me find a therapist?"],
+      "responses": [
+        "Seeking professional help can be a very positive step. I can offer some resources on finding a therapist. In the U.S., you might try Psychology Today’s therapist directory: https://www.psychologytoday.com/us/therapists.",
+        "It might be beneficial to talk to a mental health professional. Would you like some tips on how to start that process?"
+      ]
+    },
+    {
+      "tag": "sleep_support",
+      "patterns": ["I can't sleep", "I'm having trouble sleeping", "I haven't slept well"],
+      "responses": [
+        "A regular bedtime routine can help improve sleep. Consider winding down with a book or a quiet meditation before bed.",
+        "Sleep is essential. Try to maintain a consistent sleep schedule and reduce screen time before bed. Would you like some relaxation techniques?"
+      ]
+    },
+    {
+      "tag": "nutrition_support",
+      "patterns": ["I feel low on energy", "What should I eat to feel better?", "I need nutritional advice"],
+      "responses": [
+        "A balanced diet with fruits, vegetables, and whole grains can boost your energy. Foods rich in omega-3 fatty acids, like salmon, are known to be beneficial for mental health.",
+        "Sometimes dietary changes can help mood. Have you considered consulting a nutritionist for personalized advice?"
+      ]
+    },
+    {
+      "tag": "journaling",
+      "patterns": ["Can journaling help me?", "I want to write down my feelings", "Should I try journaling?"],
+      "responses": [
+        "Journaling can be a powerful way to process emotions. It might help you understand your feelings better. Would you like some prompts to get started?",
+        "Many people find that writing down their thoughts can help bring clarity and calm. Give it a try and see if it helps you."
+      ]
+    },
+    {
+      "tag": "resource_recommendation",
+      "patterns": ["I need advice", "Can you help me feel better?", "What should I do to cope?"],
+      "responses": [
+        "I recommend exploring some self-help exercises such as deep breathing, mindfulness, or even listening to calming music on Spotify (https://www.spotify.com) to lift your mood.",
+        "Sometimes, having a structured self-help plan can be useful. Would you like suggestions for guided meditation apps or online support communities?"
+      ]
+    },
+    {
+      "tag": "crisis_alert",
+      "patterns": ["I want to hurt myself", "I feel like I can't go on", "I'm suicidal", "I don't want to live"],
+      "responses": [
+        "I'm very sorry you're feeling this way. If you're in immediate danger, please call 911 (or your local emergency services) immediately. It might help to talk to someone who can offer immediate support—consider calling a crisis helpline such as Befrienders (Kenya: +254 722 178 177) or, if you're in the U.S., the National Suicide Prevention Lifeline at 988.",
+        "It sounds like you're in deep distress. Please consider reaching out to someone you trust or contacting a crisis support service right away. Your life matters."
+      ]
+    },
+    {
+      "tag": "self_resource_online",
+      "patterns": ["Tell me about mental health resources", "Where can I find help online?", "Recommend mental health resources"],
+      "responses": [
+        "There are several reputable websites you can visit: The National Institute of Mental Health (https://www.nimh.nih.gov) provides detailed information, and Mental Health America (https://www.mhanational.org) offers resources for self-help and professional guidance.",
+        "I recommend checking out the Anxiety and Depression Association of America (https://adaa.org) for practical advice and support tools."
+      ]
+    },
+    {
+      "tag": "affirmation",
+      "patterns": [
+        "yes",
+        "sure",
+        "ok",
+        "okay",
+        "alright",
+        "that would help",
+        "sounds good"
+      ],
+      "responses": [
+        "Great! Let me see how I can help.",
+        "Alright, let's proceed."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand. Could you please elaborate?",
+        "I didn't quite catch that. Can you rephrase or tell me more about how you're feeling?"
+      ]
+    }
+  ]
+}

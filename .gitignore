@@ -1,0 +1,35 @@
+re
+# Ignore environment variables and secrets
+.env
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Conda virtual environment
+env/
+*.conda
+*.yml
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore database files (if any local DB is used)
+*.sqlite3
+*.db
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore dependencies installed locally
+node_modules/
+
+# Ignore setup-related files
+setup.txt

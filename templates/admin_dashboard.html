@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard - Mental Health Chatbot{% endblock %}
+
+{% block content %}
+<div class="card my-4">
+  <div class="card-header">
+    <h4>Admin Dashboard</h4>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Total Users:</strong> {{ total_users }}</li>
+      <li class="list-group-item"><strong>Total Chat Messages:</strong> {{ total_messages }}</li>
+      <li class="list-group-item"><strong>Crisis Messages Detected:</strong> {{ crisis_messages }}</li>
+      <li class="list-group-item"><strong>Total Mood Entries:</strong> {{ total_moods }}</li>
+      <li class="list-group-item"><strong>Average Mood (Numeric Only):</strong> {{ average_mood }}</li>
+    </ul>
+  </div>
+  <div class="card-footer text-center">
+    <a href="{{ url_for('index') }}">Back to Chat</a> | <a href="{{ url_for('logout') }}">Logout</a>
+  </div>
+</div>
+{% endblock %}

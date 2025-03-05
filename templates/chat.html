@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Chat - Mental Health Chatbot{% endblock %}
+
+{% block content %}
+<div class="row">
+  <!-- Chat Interface Column -->
+  <div class="col-md-6 mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h4>Mental Health Chatbot</h4>
+      </div>
+      <div class="card-body" id="chat-window" style="height: 400px; overflow-y: auto;">
+        <!-- Chat messages will be appended here via JavaScript -->
+      </div>
+      <div class="card-footer">
+        <div class="input-group">
+          <input type="text" class="form-control" id="user-input" placeholder="Type your message..." />
+          <button class="btn btn-primary" id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mood Logging & Chart Column -->
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h4>Log Your Mood</h4>
+      </div>
+      <div class="card-body">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="mood-input" placeholder="e.g., happy, stressed, 3" />
+          <button class="btn btn-success" id="mood-btn">Log Mood</button>
+        </div>
+        <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#moodListCollapse" aria-expanded="false" aria-controls="moodListCollapse">
+          Show/Hide Mood History
+        </button>
+        <div class="collapse" id="moodListCollapse">
+          <ul class="list-group mt-2" id="mood-list">
+            <!-- Mood history items will be added here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4>Mood Trend</h4>
+      </div>
+      <div class="card-body">
+        <canvas id="moodChart" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Privacy Policy - Mental Health Chatbot{% endblock %}
+
+{% block content %}
+<div class="card my-4">
+  <div class="card-header">
+    <h4>Privacy Policy</h4>
+  </div>
+  <div class="card-body">
+    <p>This Privacy Policy explains how the Mental Health Chatbot collects, uses, and protects your personal data.</p>
+    <ul>
+      <li><strong>Data Collected:</strong> Chat messages, mood logs, notification preferences, and basic account information.</li>
+      <li><strong>Data Usage:</strong> To provide, maintain, and improve the service. Your data is used for sending notifications and generating analytics.</li>
+      <li><strong>Data Security:</strong> Your data is stored securely and is accessible only to authorized personnel.</li>
+      <li><strong>Your Rights:</strong> You have the right to request deletion or export of your data.</li>
+    </ul>
+    <p>For more information, please contact our support.</p>
+  </div>
+  <div class="card-footer text-center">
+    <a href="{{ url_for('index') }}">Back to Chat</a>
+  </div>
+</div>
+{% endblock %}

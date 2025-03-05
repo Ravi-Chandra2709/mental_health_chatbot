@@ -1,0 +1,42 @@
+/* Custom styles to complement Bootstrap */
+
+/* Body background, fonts, etc. */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* Override chat message styles if needed */
+.message {
+  margin: 5px 0;
+}
+
+.message.user {
+  text-align: right;
+  color: #4CAF50;
+}
+
+.message.bot {
+  text-align: left;
+  color: #333;
+}
+
+/* If you want to style the chat window within the Bootstrap card */
+#chat-window {
+  border: 1px solid #ddd;
+  height: 400px; /* Adjusted height for our layout */
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Additional spacing if needed */
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+  font-size: 0.85em;
+  color: #555;
+}

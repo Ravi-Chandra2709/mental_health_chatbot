@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Terms of Use - Mental Health Chatbot{% endblock %}
+
+{% block content %}
+<div class="card my-4">
+  <div class="card-header">
+    <h4>Terms of Use</h4>
+  </div>
+  <div class="card-body">
+    <p>These Terms of Use govern your use of the Mental Health Chatbot. The service is provided for informational and supportive purposes only and is not a substitute for professional medical advice or therapy.</p>
+    <ul>
+      <li>By using this service, you agree to these terms.</li>
+      <li>The chatbot is not a substitute for professional help.</li>
+      <li>We are not liable for any outcomes resulting from the use of this service.</li>
+      <li>You have the right to request deletion or export of your data.</li>
+    </ul>
+  </div>
+  <div class="card-footer text-center">
+    <a href="{{ url_for('index') }}">Back to Chat</a>
+  </div>
+</div>
+{% endblock %}

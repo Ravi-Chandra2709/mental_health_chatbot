@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Delete Account - Mental Health Chatbot{% endblock %}
+
+{% block content %}
+<div class="card my-4">
+  <div class="card-header">
+    <h4>Export Your Data and Delete Account</h4>
+  </div>
+  <div class="card-body">
+    <p>The following is an export of your account data, including chat messages and mood logs. Please review the information below.
+       Once you confirm, your account and all associated data will be permanently deleted.</p>
+    <pre>{{ export_data | tojson(indent=2) }}</pre>
+    <form method="POST" action="/delete_account">
+      <div class="mb-3">
+        <label>Are you sure you want to delete your account?</label>
+      </div>
+      <button type="submit" class="btn btn-danger">Yes, Delete My Account</button>
+    </form>
+  </div>
+  <div class="card-footer text-center">
+    <a href="{{ url_for('index') }}">Cancel</a>
+  </div>
+</div>
+{% endblock %}

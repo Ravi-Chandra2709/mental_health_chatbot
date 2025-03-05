@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Notification Settings - Mental Health Chatbot{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card my-4">
+      <div class="card-header">
+        <h4>Notification Settings</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="/settings">
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" name="notification_opt_in" id="notification_opt_in" {% if user.notification_opt_in %}checked{% endif %}>
+            <label class="form-check-label" for="notification_opt_in">Receive Notifications</label>
+          </div>
+          <div class="mb-3">
+            <label for="notification_frequency" class="form-label">Frequency:</label>
+            <select class="form-select" name="notification_frequency" id="notification_frequency">
+              <option value="daily" {% if user.notification_frequency == "daily" %}selected{% endif %}>Daily</option>
+              <option value="weekly" {% if user.notification_frequency == "weekly" %}selected{% endif %}>Weekly</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="notification_time" class="form-label">Notification Time (HH:MM, 24-hour format):</label>
+            <input type="time" class="form-control" name="notification_time" id="notification_time" value="{{ user.notification_time or '08:00' }}">
+          </div>
+          <button type="submit" class="btn btn-primary">Save Settings</button>
+        </form>
+      </div>
+      <div class="card-footer text-center">
+        <a href="{{ url_for('index') }}">Back to Chat</a> | <a href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
